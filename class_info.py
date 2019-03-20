@@ -77,7 +77,7 @@ def print_all_classes(browser):
                     # WED
                     else: all_classes[4].append(data)
 
-            browser.execute_script("try{Exit();}catch(e){}")
+            Nav.back(browser)
 
     # save extracted data as a json file
     with open('data.json', 'w+') as outfile:
